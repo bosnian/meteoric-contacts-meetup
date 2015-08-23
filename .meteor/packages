@@ -8,3 +8,11 @@ meteor-platform
 autopublish
 insecure
 meteoric:ionic
+meteoric:ionic-sass
+meteoric:ionicons-sass
+iron:layout
+iron:router
+aldeed:collection2
+aldeed:autoform@4.0.0
+meteoric:autoform-ionic
+multiply:iron-router-progress
