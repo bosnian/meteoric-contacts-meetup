@@ -5,4 +5,4 @@
 See it in action here: [meteor-contacts.meteor.com](http://meteor-contacts.meteor.com)
 
 ## License
-[MIT License](https://github.com/bosnian/mitter/LICENSE)
+[MIT License](https://github.com/bosnian/meteoric-contacts-meetup/LICENSE)
