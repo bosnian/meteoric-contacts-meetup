@@ -1,0 +1,44 @@
+<template name="contact">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="contacts" text="Contact list"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title"></h1>
+  {{/contentFor}}
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-modal="_contactsEdit" data-id="{{contact._id}}">Edit</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent class="padding contact-detail"}}
+      {{#with contact}}
+        <div class="list card">
+
+          <div class="item">
+            <h1>{{name.first}} {{name.last}}</h1>
+            {{{activeLabel}}}
+          </div>
+
+          <div class="item item-body">
+
+            <h2>{{data.email}}</h2>
+            <h2>{{data.phone}}</h2>
+
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="mailto:{{ data.email }}" >
+              <i class="icon ion-email"></i>
+              Send Email
+            </a>
+            <a class="tab-item" href="tel:{{ data.phone }}" >
+              <i class="icon ion-iphone"></i>
+              Call
+            </a>
+          </div>
+
+        </div>
+      {{/with}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
